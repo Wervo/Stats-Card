@@ -1,0 +1,140 @@
+
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    overflow: hidden;
+}
+
+.Container{
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Content{
+    background-color: hsl(244, 38%, 16%);
+    color:white;
+    height:400px;
+    width:400px;
+    padding:5px 170px;
+    padding-right:240px;
+    transform: translatex(287px);
+    border-radius:10px 0px 0px 10px;
+}
+
+.Numbers{
+    transform: translate(-180px, 110px);
+    color:white;
+    display: flex;
+    gap:5rem;
+    font-size:17px;
+    font-family: 'Inter', sans-serif;
+}
+
+.Words{
+    transform: translate(-463px, 135px);
+    color:white;
+    display: flex;
+    gap:3.8rem;
+    font-size: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.Content h1{
+    width:260%;
+    transform: translate(-100px, 10px);
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.Content h1 span{
+    color:hsl(277, 64%, 61%);
+}
+
+.Content p{
+    width:280%;
+    transform: translate(-95px, 30px);
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight:lighter;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.Overlay{
+    background-color: hsl(277, 93%, 29%);
+    height:410px;
+    width:500px;
+    position: relative;
+    z-index: 1;
+    transform: translate(-277px, -207px);
+    opacity: 0.5;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.Image img{
+width:500px;
+height:410px;
+transform: translate(-278px, 207px);
+border-radius: 0px 10px 10px 0px;
+position: relative;
+z-index: -1;
+
+}
+
+@media  screen and (Max-width:2766) {
+    .Content{
+        background-color: hsl(244, 38%, 16%);
+        color:white;
+        height:400px;
+        width:200px;
+        padding:5px 170px;
+        padding-right:240px;
+        transform: translatex(287px);
+        border-radius:10px 0px 0px 10px;
+    }
+
+    .Content h1{
+    width:10%;
+    transform: translate(-100px, 100px);
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    
+    
+    }
+    
+    .Numbers{
+        transform: translate(-180px, 110px);
+        color:white;
+        display: flex;
+        gap:5rem;
+        font-size:17px;
+        font-family: 'Inter', sans-serif;
+        flex-wrap: wrap;
+    }
+    
+    .Words{
+        transform: translate(-463px, 135px);
+        color:white;
+        display: flex;
+        gap:3.8rem;
+        font-size: 10px;
+        font-family: 'Lexend Deca', sans-serif;
+        color:hsla(0, 0%, 100%, 0.75);
+        flex-wrap: wrap;
+    }
+}
+
+@media  screen and (max-width:768) {
+    .container{
+        flex-direction: column;
+        height:auto;
+        width:auto;
+        flex-wrap: wrap;
+        display: flex;
+        
+    }
+}
